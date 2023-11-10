@@ -3,6 +3,8 @@ function prime(n) {
     return false;
   }
   for (let i = 2; i <= Math.sqrt(n); i++) {
+    console.log("i", i);
+    console.log("Precent", n % i);
     if (n % i === 0) {
       return false;
     }
